@@ -1,0 +1,8 @@
+﻿@using WebApplication1.Models
+
+@model Student
+
+@Html.DropDownList("StudentGender",
+                    new SelectList(Enum.GetValues(typeof(Gender))),
+                    "Select Gender",
+                    new { @class = "form-control" })
